@@ -1,0 +1,61 @@
+FUNCTIONAL REQUIREMENTS:
+1. For Back Officer
+-  Có thể quản lý tài khoản cá nhân trên hệ thống (đăng ký, đăng nhập/đăng xuất, điều chỉnh thông tin cá nhân)
+-  Tạo tài khoản mới cho các nhân viên theo ID của công ty
+-  Quản lý nhân viên:
+    + Xem được thông tin của nhân viên, lịch làm việc
+    + Thêm, xóa, cập nhật các thông tin của nhân viên và lịch làm việc
+-  Quản lý phương tiện:
+    + Xem được thông tin phương tiện (trọng lượng, sức chứa, mức tiêu thụ năng lượng)
+    + Thêm, xóa, cập nhật các phương tiện
+-  Giao việc cho janitors theo tuần gồm thông tin về thời gian làm việc, mcp,..
+- Chỉ định phương tiện cho nhân viên thu gom theo tháng
+- Giao việc cho collectors theo tháng gồm thời gian làm việc và tuyến đường đi
+- Chỉ định được tuyến đường tối ưu nhất về mặt nhiên liệu và quãng đường cho collectors
+- Xem được tổng quan và dung tích của theo thời gian thực tại các MCP
+-  Gửi thông báo khẩn cho nhân viên
+- Nhắn tin qua hệ thống cho các nhân viên
+
+2. For Collector/Janitor:
+- Đăng nhập/Đăng xuất vào hệ thống bằng tài khoản được cấp từ back offices
+- Xem thông tin cá nhân
+- Xem lịch làm việc gồm ca làm, MCP được phân, tuyến đường,...
+- Xem được chi tiết task theo ngày và theo tuần với giao diện one view
+- Nhắn tin qua hệ thống với back officer, collectors và janitors khác
+- Check in và check out mỗi ngày
+- Nhận được thông báo khi MCP đầy
+- Đánh dấu các task đã hoàn thành
+
+NON-FUNCTIONAL REQUIREMENTS:
+1. Performance:
+- Thời gian khởi động ứng dụng dưới 3 giây
+- Hệ thống gửi tin nhắn theo thời gian thực với độ trễ ít hơn 1
+giây
+- Mọi thao tác có độ trễ phản hồi dưới 1 giây
+- Có thể xử lý dữ liệu từ 1000 MCP ở thời điểm hiện tại và mở
+rộng cho 10000 MCP trong 5 năm tới
+2. Size
+- Hệ thống chiếm dung lượng không quá 200MB
+3. Reliability 
+- Thời gian trung bình để khắc phục sự cố không quá 5 giây
+- Dữ liệu từ MCP được cập nhật 15 phút một lần và đảm bảo
+tính khả dụng tối thiểu 95% thời gian hoạt động mỗi ngày
+- Thời gian bảo trì định kỳ mỗi quý không quá 30 phút
+4. Ease of use 
+- Người dùng có thể sử dụng được các chức năng của hệ thống
+thành thạo sau 5 phút hướng dẫn
+5. Security 
+- Hệ thống chỉ có thể sử dụng được sau khi đã đăng nhập
+- Mọi authentication attempt đều được log lại
+- Hệ thống có cài đặt SSL certificate
+- Hệ thống phải được kiểm tra qua tiêu chuẩn OWASP MASVS
+- Tự động sao lưu dữ liệu sau mỗi 24 giờ
+6. Compatibility 
+- Hệ thống có thể được sử dụng bằng bất kỳ thiết bị Android
+nào.
+- Có thể truy cập được bằng cả Wifi và Cellular data
+7. Localization 
+- Hỗ trợ tiếng Việt và tiếng Anh trong tương lai
+
+
+
