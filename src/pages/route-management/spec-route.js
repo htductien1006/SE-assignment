@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../../css/uwc-navbar.css";
 import "../../css/route-management.css";
 import vector1 from "../../assets/page-management/vector1.svg";
 import vector from "../../assets/page-management/vector.svg";
