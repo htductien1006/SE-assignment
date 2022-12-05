@@ -77,3 +77,8 @@
     margin-left: 5px;
     border-radius: 100%;
   }
+
+  .text-link {
+    color: inherit;
+    text-decoration: inherit;
+  } 
