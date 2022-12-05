@@ -319,6 +319,7 @@ td {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 24px;
+  background-color: inherit !important;
   /* display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -330,6 +331,7 @@ td {
   /* margin-left: 38px; */
   margin-bottom: 2%;
   font-weight: 500;
+  background-color: #f8f7f7;
   /* display: flex;
   flex-direction: row;
   flex-basis: 10%;
@@ -338,7 +340,6 @@ td {
 
 .table-cell-info {
   height: 100%;
-  background-color: #f8f7f7;
   /* margin-left: 24px; */
   padding-top: 2px;
   padding-left: 4px;
@@ -362,3 +363,7 @@ td {
   /* margin-top: 1px; */
 }
 
+.text-link {
+  width: inherit !important;
+  height: inherit !important;
+}
