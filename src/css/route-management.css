@@ -336,11 +336,6 @@ td {
   justify-content: space-between; */
 }
 
-.ang-s-dng {
-  /* margin-top: 4px;
-  margin-right: 49px; */
-}
-
 .table-cell-info {
   height: 100%;
   background-color: #f8f7f7;
@@ -353,6 +348,10 @@ td {
   flex-basis: 58%;
   justify-content: space-around;
   align-items: center; */
+}
+
+.cell-status {
+  box-shadow: none !important;
 }
 
 .icon-trash-3 {
