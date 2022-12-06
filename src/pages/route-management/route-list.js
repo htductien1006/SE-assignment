@@ -70,7 +70,9 @@ const RouteList = () => {
             </table>
           </div>
           <button className="btn-create-route">
-            <span className="to-route-mi">Tạo Route mới</span>
+            <Link className="text-link" to={"../route-management/create"}>
+              <span className="to-route-mi">Tạo Route mới</span>
+            </Link>
           </button>
         </div>
       </div>
