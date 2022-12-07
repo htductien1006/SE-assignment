@@ -1,0 +1,45 @@
+.loginPhoto {
+  /* height: 100vh; */
+  /* object-fit: contain; */
+  width: 60%;
+  /* margin-bottom: 30px; */
+}
+
+.login-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 40%;
+  row-gap: 30px;
+  background-color: #73c97b;
+  padding: 0 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.login-logo {
+  margin: 0 auto;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
