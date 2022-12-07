@@ -15,7 +15,7 @@ const UwcNavbar = () => {
             <div className="uwc-nav-button">JANITOR</div>
             <div className="uwc-nav-button">COLLECTOR</div>
             <div className="uwc-nav-button">
-                <Link className="text-link" to={"../route-management/list"}>ROUTE</Link>
+                <Link className="text-link" to={"../route-management"}>ROUTE</Link>
             </div>
           </div>
           <div className="personal-info">
