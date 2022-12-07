@@ -5,6 +5,7 @@ import RouteList from "./pages/route-management/route-list";
 import VehicleAssign from "./pages/vehicle-assign/vehicle-assign";
 import RouteCreate from "./pages/route-management/route-create";
 import Login from "./pages/login";
+import StaffInfo from "./pages/staff-info";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/staff-info" element={<StaffInfo />} />
           <Route exact path="/route-management/list" element={<RouteList />} />
           <Route exact path="/route-management/spec" element={<SpecRoute />} />
           <Route
