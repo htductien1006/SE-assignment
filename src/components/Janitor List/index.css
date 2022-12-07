@@ -1,0 +1,50 @@
+.header {
+    height: 1rem;
+}
+
+.boxTitle {
+    position: sticky;
+    width: 100%;
+    background: #378F28;
+    color: white;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px 70px 0px 0px;
+}
+.container {
+    position: absolute;
+    width: 90vw;
+    height: 80vh;
+    left: 5vw;
+    top: 10vh;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    border-radius: 70px;
+    border: 2px solid black;
+}
+.inforContainer {
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    overflow-y: scroll;
+}
+.table {
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+}
+.thead {
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    z-index: 10;
+
+}
+.tbody {
+    font-size: 15px;
+}
+.tbody-hover {
+    background-color: blue;
+}
