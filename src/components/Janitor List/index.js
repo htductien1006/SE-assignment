@@ -47,7 +47,7 @@ export const JanitorList = () => {
                     JANITOR LIST
                 </div>
                 <div className="inforContainer">
-                    <Table className="table">
+                    <Table className="table" striped bordered hover>
                         <thead className="thead">
                             <tr>
                                 <th>Avatar</th>
@@ -57,17 +57,19 @@ export const JanitorList = () => {
                                 <th>Email</th>
                             </tr>
                         </thead>
-                        <tbody className="tbody">
-                            {janitorInformation.map((item) => (
-                                <tr>
-                                    <th><img width="150px" src={item.Avatar} alt="avatar"></img></th>
-                                    <th>{item.ID}</th>
-                                    <th>{item.Name}</th>
-                                    <th>{item.Phone}</th>
-                                    <th>{item.Email}</th>
+                        {janitorInformation.map((item) => (
+                            <tbody className="tbody">
+
+                                <tr className="tr" onMouseOver={{ backgroundColor: "aqua" }}>
+                                    <th><img height="150px" width="120px" src={item.Avatar} alt="avatar"></img></th>
+                                    <th style={{ fontWeight: "500" }}>{item.ID}</th>
+                                    <th style={{ fontWeight: "500" }}>{item.Name}</th>
+                                    <th style={{ fontWeight: "500" }}>{item.Phone}</th>
+                                    <th style={{ fontWeight: "500" }}>{item.Email}</th>
                                 </tr>
-                            ))}
-                        </tbody>
+
+                            </tbody>
+                        ))}
                     </Table>
                 </div>
             </div>
