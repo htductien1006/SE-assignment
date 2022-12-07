@@ -13,7 +13,7 @@ function App() {
           <Route exact path="/route-management/"  element={<RouteList/>} />
           <Route exact path="/route-management/spec/:id"  element={<SpecRoute/>} />
           <Route exact path="/route-management/create"  element={<RouteCreate/>} />
-          <Route exact path="/vehicle-assign"  element={<VehicleAssign/>} />
+          <Route exact path="/vehicle-assign/:staffType"  element={<VehicleAssign/>} />
         </Routes>
       </BrowserRouter>
       {/* <header className="App-header">

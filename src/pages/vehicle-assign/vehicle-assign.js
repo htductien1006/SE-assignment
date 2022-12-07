@@ -1,7 +1,6 @@
 import React from 'react';
-import UwcNavbar from "../uwc-navbar"
-import "../../css/uwc-navbar.css";
-import "../../css/vehicle-assign.css";
+import UwcNavbar from "../uwc-navbar/uwc-navbar"
+import "./vehicle-assign.css";
 
 const VehicleAssign = () => {
     return (

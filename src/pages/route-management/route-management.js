@@ -5,9 +5,9 @@ import { useBetween } from 'use-between';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
-import UwcNavbar from "../uwc-navbar"
+import UwcNavbar from "../uwc-navbar/uwc-navbar"
 
-import "../../css/route-management.css";
+import "./route-management.css";
 import iconTrash from "../../assets/page-management/iconTrash.svg"
 import image1 from "../../assets/page-management/image1.png";
 import iconArrowBackOutl from "../../assets/page-management/iconArrowBackOutl.svg";
