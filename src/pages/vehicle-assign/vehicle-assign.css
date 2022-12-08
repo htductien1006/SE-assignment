@@ -110,6 +110,14 @@ td:hover {
     margin: 5px;
 }
 
+input {    
+    visibility:hidden;
+}
+
+input:checked ~ label{
+    background-color: rgb(200, 200, 200) !important;
+}
+
 .table-data-clicked {
     background-color: rgb(200, 200, 200) !important;
 }
