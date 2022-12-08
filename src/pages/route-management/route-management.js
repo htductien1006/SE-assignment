@@ -54,7 +54,8 @@ const RouteList = () => {
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonText: 'Xóa',
-        cancelButtonText: 'Hủy'
+        cancelButtonText: 'Hủy',
+        reverseButtons: true
       }).then((result) => {
         if (result.isConfirmed) {
           deleteRoute(id)
