@@ -1,0 +1,44 @@
+.vehiclegarbage-truck-23 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.chiu-mcp-29 {
+  margin: 0;
+}
+.r5c6-content-txt-span {
+  line-break: anywhere;
+  width: 100%;
+}
+.r5c6-content-div {
+  position: absolute;
+  top: 50px;
+  left: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 46px;
+}
+.r5c6-text-div {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  display: inline-block;
+}
+.r5c6-copy-div {
+  position: relative;
+  background-color: var(--color-green-100);
+  border: 1px dashed var(--gray-5);
+  box-sizing: border-box;
+  width: 313px;
+  height: 161px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
