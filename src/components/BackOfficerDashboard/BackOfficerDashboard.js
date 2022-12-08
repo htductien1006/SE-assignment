@@ -1,5 +1,6 @@
 import './BackOfficerDasboard.css'
 import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 import {BsFillPeopleFill, BsTruck} from 'react-icons/bs'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
@@ -31,6 +32,92 @@ const Mcp = [
     }
 ]
 
+const Task = [
+    {
+        'id': 1,
+        'name': 'Task1',
+        'employees': [
+            {
+                'id': 1,
+                'name': 'XUAN MANH'
+            },
+            {
+                'id': 2,
+                'name': 'DUC TIEN'
+            }
+        ]
+    },
+    {
+        'id': 2,
+        'name': 'Task2',
+        'employees': [
+            {
+                'id': 1,
+                'name': 'DINH TUAN'
+            },
+            {
+                'id': 2,
+                'name': 'NHAT HA'
+            },
+            {
+                'id': 3,
+                'name': 'DUC MINH'
+            }
+        ]
+    },
+    {
+        'id': 3,
+        'name': 'Task3',
+        'employees': [
+            {
+                'id': 1,
+                'name': 'TRONG PHU'
+            },
+            {
+                'id': 2,
+                'name': 'HUU PHU'
+            },
+            {
+                'id': 3,
+                'name': 'DUC MINH'
+            }
+        ]
+    },
+    {
+        'id': 4,
+        'name': 'Task4',
+        'employees': [
+            {
+                'id': 1,
+                'name': 'LEO MESSI'
+            },
+            {
+                'id': 2,
+                'name': 'CRIS RONALDO'
+            }
+        ]
+    },
+    {
+        'id': 5,
+        'name': 'Task5',
+        'employees': [
+            {
+                'id': 1,
+                'name': 'LEO MESSI'
+            },
+            {
+                'id': 2,
+                'name': 'CRIS RONALDO'
+            },
+            {
+                'id': 3,
+                'name': 'HUU PHU'
+            }
+        ]
+    }
+]
+
+
 const GridMcp = (props) => {
     return (
         <div className={`tabs__content__1__Co1__Row`}  style={{color: 'black', fontWeight: 'bold'}}>
@@ -39,6 +126,23 @@ const GridMcp = (props) => {
                 <span className={`percent`} style = {{color: `${(props.storage === 100) ? 'red' : 'blue'}`, backgroundColor: `${(props.storage === 100) ? 'red' : 'blue'}`, width: '100%'}}>''</span>
                 <span className={`non_percent`} style = {{marginLeft: '1rem'}}>{`${props.storage}%`}</span>
             </div>
+        </div>
+    );
+}
+
+const TaskList = (props) => {
+    return (
+        <div className={`tabs__content__2__Co1__row1`}>
+            <Link to={'#'} className = {`title__Task`}>{props.title}</Link>
+            <span className = {`list_Employee`}>
+                {props.employee.reduce((result, cur, i) => {
+                    if(i !== props.employee.length - 1) {
+                        return result + cur.name + ',  '
+                    } else {
+                        return result + cur.name
+                    }
+                }, '' )}
+            </span>
         </div>
     );
 }
@@ -76,6 +180,7 @@ const Tabs = () => {
                   </button>
               </li>
           </ul>
+
           <div className={`tabs__content`} style={{display: `${display1}`}}>
             <div className={`tabs__content__1`}>
                 <div className={`tabs__content__1__Co1`}>
@@ -83,6 +188,7 @@ const Tabs = () => {
                         <GridMcp key={i.id} id={i.id} storage={i.storage}/>
                     )}
                 </div>
+                
                 <div className={`tabs__content__1__Co2`}>
                     <div className={`tabs__content__1__Co2__Row1`}>
                         <BsFillPeopleFill style={{width: '5rem', height: '5rem', color: 'black'}}/>
@@ -95,10 +201,13 @@ const Tabs = () => {
                 </div>
             </div>
           </div>
+
           <div className={`tabs__content`} style={{display: `${display2}`}}>
             <div className={`tabs__content__2`} >
                     <div className={`tabs__content__2__Co1`} >
-                        
+                        { Task.map((data) => 
+                            <TaskList key={data.id} title={data.name} employee={data.employees}/>
+                        )}
                     </div>
                     <div className={`tabs__content__2__Co2`}>
                         <Calendar/>
