@@ -1,0 +1,426 @@
+.white-background-bottom-div {
+  position: absolute;
+  top: 86px;
+  left: 0;
+  border-radius: 0 0 var(--br-md) var(--br-md);
+  background-color: var(--color-white);
+  width: 1148px;
+  height: 575px;
+}
+.white-background-top-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1148px;
+  height: 86px;
+}
+.white-background-div {
+  position: relative;
+  width: 1148px;
+  height: 661px;
+  flex-shrink: 0;
+}
+.background-frame-div {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  background-color: var(--color-gray-200);
+  width: 1280px;
+  height: 757px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-md) var(--padding-lg);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.september-2022 {
+  position: relative;
+  font-size: var(--font-size-3xl);
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-gray-500);
+  text-align: left;
+}
+.monthandyear-frame-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm);
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.friday-div {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  flex-shrink: 0;
+}
+.monday-div {
+  width: 153px;
+}
+.monday-div,
+.saturday-div,
+.sunday-div,
+.thursday-div,
+.tuesday-div,
+.wednesday-div {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  flex-shrink: 0;
+}
+.tuesday-div {
+  width: 160px;
+}
+.wednesday-div {
+  width: 155px;
+}
+.thursday-div {
+  width: 159px;
+}
+.friday-div {
+  width: 151px;
+}
+.saturday-div {
+  width: 157px;
+}
+.sunday-div {
+  width: 156px;
+}
+.dayofweek-frame-div {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-0);
+}
+.r1c1-text-div {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-gray-300);
+  text-align: left;
+  display: inline-block;
+}
+.r1c1-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 156px;
+  height: 80px;
+  flex-shrink: 0;
+}
+.r1c1-button:hover,
+.r1c2-button,
+.r1c2-button:hover {
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+}
+.r1c2-button {
+  cursor: pointer;
+  border: 1px dashed var(--gray-5);
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 157px;
+  height: 81px;
+  flex-shrink: 0;
+}
+.r1c2-button:hover {
+  height: 80px;
+}
+.r1c3-text-b,
+.r1c4-text-div {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-gray-300);
+  text-align: left;
+}
+.r1c4-text-div {
+  font-weight: 500;
+  color: var(--color-black);
+}
+.r1c4-button {
+  cursor: pointer;
+  border: 1px dashed var(--gray-5);
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  box-sizing: border-box;
+  width: 157px;
+  height: 81px;
+  flex-shrink: 0;
+}
+.r1c4-button:hover {
+  width: 157px;
+  height: 80px;
+}
+.r1c6-text-b {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+}
+.r1c7-button {
+  cursor: pointer;
+  border: 1px dashed var(--gray-5);
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  box-sizing: border-box;
+  width: 156px;
+  height: 81px;
+  flex-shrink: 0;
+}
+.r1c4-button:hover,
+.r1c7-button:hover {
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+}
+.first-row-div {
+  height: 80px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}
+.r2c5-button {
+  cursor: pointer;
+  border: 1px dashed var(--gray-5);
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  box-sizing: border-box;
+  width: 156px;
+  height: 81px;
+  flex-shrink: 0;
+}
+.r2c5-button:hover,
+.r4c2-button:hover,
+.r4c4-button:hover,
+.r4c5-button:hover,
+.r4c6-button:hover,
+.r5c1-button:hover,
+.r5c2-button:hover {
+  height: 80px;
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+}
+.vehicletroller-1-p8 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.chiu-mcp-24 {
+  margin: 0;
+}
+.r4c2-content-txt-span1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.r4c2-content-div1,
+.r4c2-text-div1 {
+  position: absolute;
+  left: 8px;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+}
+.r4c2-content-div1 {
+  top: 30px;
+  font-size: var(--font-size-lg);
+  display: flex;
+  align-items: center;
+  width: 112px;
+  height: 46px;
+}
+.r4c2-text-div1 {
+  top: 10px;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  opacity: 0.7;
+}
+.r4c2-button {
+  background-color: var(--gray-3);
+}
+.r4c2-button,
+.r4c4-button {
+  cursor: pointer;
+  border: 1px dashed var(--gray-5);
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  width: 157px;
+  height: 81px;
+  flex-shrink: 0;
+}
+.r4c5-button,
+.r4c6-button {
+  height: 81px;
+}
+.r4c5-button,
+.r4c6-button,
+.r5c1-button,
+.r5c2-button {
+  cursor: pointer;
+  border: 1px dashed var(--gray-5);
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.r4c4-button {
+  background-color: var(--blue-2);
+}
+.r4c5-button {
+  width: 156px;
+}
+.r4c5-button,
+.r4c6-button,
+.r5c1-button,
+.r5c2-button {
+  background-color: var(--color-green-200);
+}
+.r4c6-button,
+.r5c1-button {
+  width: 157px;
+}
+.r5c1-button,
+.r5c2-button {
+  height: 80px;
+}
+.r5c2-button {
+  width: 156px;
+}
+.calendar-board-main {
+  align-items: center;
+  gap: var(--gap-0);
+}
+.calendar-board-main,
+.calendar-frame-div,
+.last-row-div {
+  display: flex;
+  justify-content: flex-start;
+}
+.last-row-div {
+  align-items: center;
+  gap: var(--gap-0);
+  height: 80px;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+.calendar-board-main,
+.calendar-frame-div {
+  flex-direction: column;
+}
+.calendar-frame-div {
+  position: absolute;
+  top: 197px;
+  left: 102px;
+  align-items: flex-start;
+  gap: var(--gap-md);
+}
+.logo-text-div {
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  font-size: var(--font-size-2xl);
+  font-family: var(--font-montserrat);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  width: 114px;
+  height: 54px;
+}
+.logoframe-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 121px;
+  height: 75px;
+  flex-shrink: 0;
+}
+.textbox-icon {
+  width: 50.25px;
+  height: 40px;
+}
+.avatar-icon,
+.notification-icon,
+.textbox-icon {
+  position: relative;
+  flex-shrink: 0;
+}
+.notification-icon {
+  width: 44.69px;
+  height: 33.13px;
+}
+.avatar-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+.header-bar-frame-div,
+.icon-frame-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-frame-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 246px;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.header-bar-frame-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-green-100);
+  width: 1280px;
+  justify-content: space-between;
+}
+.janitor-calendar-div {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 832px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+  font-family: var(--font-inter);
+}
