@@ -1,10 +1,3 @@
+Documents for Requirements is stored in Documents folder.
+System Modelling and Architecture design, my team decided to manage their change in the report following overleaf link: https://www.overleaf.com/read/grprdxzzgpgy
 
-  # janitor_calendar
-
-  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">node js</a></code>
-
-  To preview and run the project on your device:
-  1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
-  2) In the terminal, run `npm install`
-  3) Run `npm start` to view project in browser
-  
