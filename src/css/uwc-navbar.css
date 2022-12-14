@@ -1,0 +1,84 @@
+.uwc-navbar {
+  color: #fff;
+  width: 100%;
+  background-color: #73c97b;
+  flex-direction: row;
+  flex-basis: 10%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  display: flex;
+}
+
+.logo {
+  text-align: center;
+  height: 100%;
+  flex-direction: row;
+  flex-basis: 10%;
+  justify-content: flex-start;
+  align-items: stretch;
+  /* margin-right: 144px; */
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  line-height: 24px;
+  display: flex;
+}
+
+.logo-1 {
+  padding-left: 10px;
+}
+
+.uwc-navigator {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.uwc-nav-button {
+  height: 80%;
+  background-color: rgb(46, 46, 46);
+  border: 1px solid #000;
+  border-radius: 10px;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+}
+
+.personal-info {
+  display: flex;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  /* object-fit: cover; */
+  /* border: 2.5px solid #fff; */
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 100%;
+}
+
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}
