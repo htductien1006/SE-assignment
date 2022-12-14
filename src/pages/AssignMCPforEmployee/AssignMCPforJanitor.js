@@ -119,14 +119,14 @@ function confirmMCP() {
 
 const Employee = (props) => (
   <>
-    <li className="list-group-item ">{props.employee}</li>
+    <li className="list-group-item employ">{props.employee}</li>
   </>
 );
 const EmployeeCheckBox = (props) => (
   <>
-    <li className="list-group-item ">
+    <li className="list-group-item employ">
       {props.employee}{" "}
-      <input className="form-check-input checkbox1" type="checkbox" />
+      <input className="form-check-input checkbox1" type="checkbox" style={{visibility: 'visible'}}/>
     </li>
   </>
 );
@@ -140,14 +140,14 @@ const ListAssigned = (props) => {
           className="list-group-item check fixedlist"
           style={{ backgroundColor: `${slot === 0 ? "#E23744" : "#D9D9D9"}` }}
         >
-          <Link to="/info">{`${
+          <Link to="/infoMCP">{`${
             slot === 0
               ? `MCP ${props.id} - ${props.address} - Đã đầy`
               : `MCP ${props.id} - ${props.address} - Còn trống ${slot}`
           }`}</Link>
           <input
             className="form-check-input"
-            style={{ marginLeft: `${slot === 0 ? "74px" : "50px"}` }}
+            style={{ marginLeft: `${slot === 0 ? "74px" : "50px"}`, visibility: 'visible'}}
             type="checkbox"
           />
         </label>
@@ -181,7 +181,7 @@ const ListOther = (props) => {
           style={{ backgroundColor: `${slot === 0 ? "#E23744" : "#D9D9D9"}` }}
         >
           <Link
-            to="/info"
+            to="/infoMCP"
             style={{ color: `${slot === 0 ? "white" : "black"}` }}
           >{`${
             slot === 0
@@ -190,7 +190,7 @@ const ListOther = (props) => {
           }`}</Link>
           <input
             className="form-check-input"
-            style={{ marginLeft: `${slot === 0 ? "74px" : "50px"}` }}
+            style={{ marginLeft: `${slot === 0 ? "74px" : "50px"}`, visibility: 'visible' }}
             type="checkbox"
           />
         </label>
@@ -219,10 +219,10 @@ const AssignEmp = () => {
     <div>
       <UwcNavbar/>
       <div className={`tabs`}>
-        <ul className={`tabs__nav`}>
+        <ul className={`tabs_nav`}>
           <h1 className="text-center">PHÂN VIỆC JANITOR</h1>
         </ul>
-        <ul className={`tabs__return`}>
+        <ul className={`tabs_return`}>
           <h1 className="text-return">
             <button className="btn">
               <i className="gg-arrow-left"></i>
@@ -230,9 +230,9 @@ const AssignEmp = () => {
             JANITOR{" "}
           </h1>
         </ul>
-        <div className={`tabs__content`}>
-          <div className={`tabs__content__1`}>
-            <div className={`tabs__content__1__Co1`}>
+        <div className={`tabs_content`}>
+          <div className={`tabs_content_1`}>
+            <div className={`tabs_content_1_Co1`}>
               <span className="textMCP-center">Các MCP hiện tại</span>
               <div className="card">
                 <div className="card-body">
@@ -257,7 +257,7 @@ const AssignEmp = () => {
                 Xóa
               </button>
             </div>
-            <div className={`tabs__content__1__Co2`}>
+            <div className={`tabs_content_1_Co2`}>
               <span className="textMCP-center">Các MCP khác</span>
               <div className="card">
                 <div className="card-body">
@@ -276,8 +276,7 @@ const AssignEmp = () => {
               <div className=" btndel"></div>
             </div>
           </div>
-        </div>
-        <button
+          <button
           type="button"
           className="btn btn-success button"
           onClick={confirmMCP}
@@ -285,6 +284,7 @@ const AssignEmp = () => {
         >
           Xác nhận
         </button>
+        </div>
       </div>
     </div>
   );
