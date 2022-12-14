@@ -6,6 +6,8 @@ import VehicleAssign from "./pages/vehicle-assign/vehicle-assign";
 import RouteCreate from "./pages/route-management/route-create";
 import Login from "./pages/login";
 import StaffInfo from "./pages/staff-info";
+import { CollectorList } from './components/Collector List';
+import { JanitorList } from './components/Janitor List';
 // import logo from './logo.svg';
 import RouteList, {SpecRoute, RouteCreate} from './pages/route-management/route-management';
 
@@ -23,6 +25,8 @@ function App() {
           <Route exact path="/route-management/spec/:id"  element={<SpecRoute/>} />
           <Route exact path="/route-management/create"  element={<RouteCreate/>} />
           <Route exact path="/vehicle-assign/:staffType"  element={<VehicleAssign/>} />
+          <Route path="/JanitorList" element={<JanitorList />} />
+          <Route path="/CollectorList" element={<CollectorList />} />
         </Routes>
       </BrowserRouter>
     </div>
