@@ -1,12 +1,13 @@
 import loginBg from "../../assets/login/login-bg.jpg";
-import "./index.css";
+// import "./index.css";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = () => {  
+  import("./index.css");
   const navigate = useNavigate();
   return (
     <div className="login-container">
@@ -73,7 +74,7 @@ const Login = () => {
             width: "30%",
             margin: "0 auto",
           }}
-          onClick={() => navigate("/home")}
+          onClick={() => navigate("/dashboard")}
         >
           Đăng nhập
         </Button>

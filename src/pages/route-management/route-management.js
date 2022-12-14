@@ -7,13 +7,14 @@ import withReactContent from 'sweetalert2-react-content'
 
 import UwcNavbar from "../uwc-navbar/uwc-navbar"
 
-import "./route-management.css";
+// import "./route-management.css";
 import iconTrash from "../../assets/page-management/iconTrash.svg"
 import image1 from "../../assets/page-management/image1.png";
 import iconArrowBackOutl from "../../assets/page-management/iconArrowBackOutl.svg";
 
 
 const useRouteList = () => {
+  import("./route-management.css");
   const [id_generate, setID] = useState(5);
   const [routeList, setRoutes] = useState ([
     {id: 1, status: 'Đang sử dụng', info: 'Độ dài: 2 Km, Đi qua: 3 MCP'},

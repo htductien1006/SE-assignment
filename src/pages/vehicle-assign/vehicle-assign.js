@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import { useParams } from 'react-router-dom';
 import UwcNavbar from "../uwc-navbar/uwc-navbar"
-import "./vehicle-assign.css";
+// import "./vehicle-assign.css";
 
 const VehicleAssign = () => {
+    import("./vehicle-assign.css");
     const params = useParams();
     const truckList = [
         {id: 0}, 

@@ -82,3 +82,11 @@
   color: inherit;
   text-decoration: inherit;
 }
+
+a:visited {
+  color: inherit !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}

@@ -1,10 +1,12 @@
 import { Button, IconButton } from "@mui/material";
 import UwcNavbar from "../uwc-navbar/uwc-navbar"
 import staffPhoto from "../../assets/staff-info/staffPhoto.png";
-import "./index.css";
+// import "./index.css";
 import arrow from "../../assets/staff-info/arrow-left.png";
+import { Link } from 'react-router-dom';
 
 const StaffInfo = () => {
+  import("./index.css");
   return (
     <div>
       <UwcNavbar />
@@ -12,10 +14,10 @@ const StaffInfo = () => {
         <div className="staff-page-title">THÔNG TIN NHÂN VIÊN</div>
         <div className="staff-page-body">
           <div className="gobackBtn">
+            <Link className="text-link" to={"../janitor-list"}>
             <IconButton aria-label="fingerprint" color="success">
               <img src={arrow} style={{ width: "30px", height: "30px" }} />
-            </IconButton>
-            <span> Quay lại</span>
+            </IconButton><span> Quay lại</span></Link>
           </div>
           <div className="staff-info-container">
             <div className="staff-image">
@@ -54,10 +56,14 @@ const StaffInfo = () => {
                   <strong>Mã phương tiện: </strong> <span>123456</span>
                 </p>
                 <div className="staff-button">
-                  <Button variant="contained" color="success">
-                    Phân phương tiện
-                  </Button>
-                  <Button variant="contained">Phân công việc</Button>
+                  <Link className="text-link" to={"../vehicle-assign/janitor"}>
+                    <Button variant="contained" color="success">
+                      Phân phương tiện
+                    </Button>
+                  </Link>
+                  <Link className="text-link" to={"../employee-assign"}>
+                    <Button variant="contained">Phân công việc</Button>
+                  </Link>
                 </div>
               </div>
             </div>

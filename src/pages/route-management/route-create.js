@@ -1,10 +1,10 @@
 import React from "react";
 import UwcNavbar from "../uwc-navbar/uwc-navbar"
 import { Link } from "react-router-dom";
-import "../../css/route-management.css";
 import image1 from "../../assets/page-management/image1.png";
 
 const RouteCreate = () => {
+  import("./route-management.css");
   return (
     <div className="route-management">
       <UwcNavbar />

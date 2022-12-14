@@ -1,4 +1,4 @@
-import "./AssignMCPforJanitor.css";
+
 import React from "react";
 import { Link } from "react-router-dom";
 import UwcNavbar from "../uwc-navbar/uwc-navbar"
@@ -215,6 +215,7 @@ const ListOther = (props) => {
 };
 
 const AssignEmp = () => {
+  import("./AssignMCPforJanitor.css");
   return (
     <div>
       <UwcNavbar/>

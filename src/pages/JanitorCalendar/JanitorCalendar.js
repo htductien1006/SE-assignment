@@ -9,9 +9,9 @@ import R4c7Copy from "../../components/R4c7Copy";
 import R5c1Copy from "../../components/R5c1Copy";
 import R5c2Copy from "../../components/R5c2Copy";
 import UwcNavbar from "../uwc-navbar/uwc-navbar"
-import "./JanitorCalendar.css";
 
 const JanitorCalendar = () => {
+  import("./JanitorCalendar.css");
   const [isR4c2CopyPopupOpen, setR4c2CopyPopupOpen] = useState(false);
   const [isR4c3CopyPopupOpen, setR4c3CopyPopupOpen] = useState(false);
   const [isR4c4CopyPopupOpen, setR4c4CopyPopupOpen] = useState(false);

@@ -1,9 +1,7 @@
-import './BackOfficerDasboard.css'
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import {BsFillPeopleFill, BsTruck} from 'react-icons/bs'
 import Calendar from 'react-calendar'
-import 'react-calendar/dist/Calendar.css'
 import UwcNavbar from "../../pages/uwc-navbar/uwc-navbar";
 
 const Mcp = [
@@ -149,6 +147,8 @@ const TaskList = (props) => {
 }
 
 const Tabs = () => {
+  import('./BackOfficerDasboard.css');
+  import('react-calendar/dist/Calendar.css');
   const [activeTabId, setActiveTab] = useState(1)
   const [display1, setDisplay1] = useState('block')
   const [display2, setDisplay2] = useState('none')
