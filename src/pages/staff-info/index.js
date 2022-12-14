@@ -1,5 +1,5 @@
 import { Button, IconButton } from "@mui/material";
-import UwcNavbar from "../uwc-navbar";
+import UwcNavbar from "../uwc-navbar/uwc-navbar"
 import staffPhoto from "../../assets/staff-info/staffPhoto.png";
 import "./index.css";
 import arrow from "../../assets/staff-info/arrow-left.png";
