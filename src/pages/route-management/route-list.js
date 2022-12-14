@@ -1,5 +1,5 @@
 import React from 'react';
-import UwcNavbar from "../uwc-navbar"
+import UwcNavbar from "../uwc-navbar";
 import { Link } from 'react-router-dom';
 import "../../css/route-management.css";
 import iconTrash from "../../assets/page-management/iconTrash.svg"
