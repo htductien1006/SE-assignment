@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AVT from "../../assets/avatar.png";
 import Table from 'react-bootstrap/Table';
 import { makeStyles } from "@mui/styles";
+import UwcNavbar from "../../pages/uwc-navbar/uwc-navbar";
 import "./index.css"
 
 const janitorInformation = [
@@ -41,7 +42,9 @@ const janitorInformation = [
 export const JanitorList = () => {
     return (
         <>
-            <div className="header"></div>
+            <div className="header">
+                <UwcNavbar/>
+            </div>
             <div className="container">
                 <div className="boxTitle">
                     JANITOR LIST
