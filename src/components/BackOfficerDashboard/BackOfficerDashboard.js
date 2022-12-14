@@ -166,57 +166,59 @@ const Tabs = () => {
   }
 
   return (
-      <div className={`tabs`}>
+    <div>
         <UwcNavbar/>
-          <ul className={`tabs__nav`}>
-              <li className={`tabs__item`}>
-                  <button className={`tabs__button ${(activeTabId === 1) ? 'active' : ''}`}
-                          onClick={() => ClickTab(1)}>
-                      STATISTIC
-                  </button>
-              </li>
-              <li className={`tabs__item`}>
-                  <button className={`tabs__button ${(activeTabId === 2) ? 'active' : ''}`}
-                          onClick={() => ClickTab(2)}>
-                      JOBS
-                  </button>
-              </li>
-          </ul>
+        <div className={`tabs`}>
+            <ul className={`tabs__nav`}>
+                <li className={`tabs__item`}>
+                    <button className={`tabs__button ${(activeTabId === 1) ? 'active' : ''}`}
+                            onClick={() => ClickTab(1)}>
+                        STATISTIC
+                    </button>
+                </li>
+                <li className={`tabs__item`}>
+                    <button className={`tabs__button ${(activeTabId === 2) ? 'active' : ''}`}
+                            onClick={() => ClickTab(2)}>
+                        JOBS
+                    </button>
+                </li>
+            </ul>
 
-          <div className={`tabs__content`} style={{display: `${display1}`}}>
-            <div className={`tabs__content__1`}>
-                <div className={`tabs__content__1__Co1`}>
-                    {Mcp.map((i) => 
-                        <GridMcp key={i.id} id={i.id} storage={i.storage}/>
-                    )}
-                </div>
-                
-                <div className={`tabs__content__1__Co2`}>
-                    <div className={`tabs__content__1__Co2__Row1`}>
-                        <BsFillPeopleFill style={{width: '5rem', height: '5rem', color: 'black'}}/>
-                        <span style={{fontSize: '4rem', color: 'black', marginLeft: '1rem'}}>: 10</span>
-                    </div>
-                    <div className={`tabs__content__1__Co2__Row2`}>
-                        <BsTruck style={{width: '5rem', height: '5rem', color: 'black'}}/>
-                        <span style={{fontSize: '4rem', color: 'black', marginLeft: '1rem'}}>: 30</span>
-                    </div>
-                </div>
-            </div>
-          </div>
-
-          <div className={`tabs__content`} style={{display: `${display2}`}}>
-            <div className={`tabs__content__2`} >
-                    <div className={`tabs__content__2__Co1`} >
-                        { Task.map((data) => 
-                            <TaskList key={data.id} title={data.name} employee={data.employees}/>
+            <div className={`tabs__content`} style={{display: `${display1}`}}>
+                <div className={`tabs__content__1`}>
+                    <div className={`tabs__content__1__Co1`}>
+                        {Mcp.map((i) => 
+                            <GridMcp key={i.id} id={i.id} storage={i.storage}/>
                         )}
                     </div>
-                    <div className={`tabs__content__2__Co2`}>
-                        <Calendar/>
+                    
+                    <div className={`tabs__content__1__Co2`}>
+                        <div className={`tabs__content__1__Co2__Row1`}>
+                            <BsFillPeopleFill style={{width: '5rem', height: '5rem', color: 'black'}}/>
+                            <span style={{fontSize: '4rem', color: 'black', marginLeft: '1rem'}}>: 10</span>
+                        </div>
+                        <div className={`tabs__content__1__Co2__Row2`}>
+                            <BsTruck style={{width: '5rem', height: '5rem', color: 'black'}}/>
+                            <span style={{fontSize: '4rem', color: 'black', marginLeft: '1rem'}}>: 30</span>
+                        </div>
                     </div>
                 </div>
             </div>
-      </div>
+
+            <div className={`tabs__content`} style={{display: `${display2}`}}>
+                <div className={`tabs__content__2`} >
+                        <div className={`tabs__content__2__Co1`} >
+                            { Task.map((data) => 
+                                <TaskList key={data.id} title={data.name} employee={data.employees}/>
+                            )}
+                        </div>
+                        <div className={`tabs__content__2__Co2`}>
+                            <Calendar/>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
   );
 }
 
