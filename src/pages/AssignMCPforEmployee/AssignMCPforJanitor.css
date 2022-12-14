@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+}
+
+:root {
+    --bg: #301e4e;
+    --headline: #ffffff;
+    --paragraph: #c9bae2;
+    --cardBG: #463366;
+    --cardText: #cabae2;
+    --activeColor: #ff6e6c;
+    --ff: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #D9D9D9
+}
+
+.tabs {
+    width: 70%;
+    margin: 6rem auto;
+}
+
+.tabs__content {
+    padding: 0 0 0 3rem;
+    color: var(--paragraph);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    background: white;
+    border-width: 1px;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    min-height: 46rem;
+}
+
+.tabs__content h3 {
+    color: black;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tabs__content__1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.tabs__content__1__Co1 {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 2rem 1rem;
+    grid-row-gap: 3rem;
+    min-height: 5rem
+
+}
+
+.tabs__content__1__Co2 {
+    display: grid;
+    padding: 2rem 1rem;
+    min-height: 5rem;
+    grid-row-gap: 3rem;
+}
+
+
+.tabs__nav {
+    align-items: center;
+    list-style: none;
+    background-color: #378F28;
+    height: 6rem;
+    border-width: 1px;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    margin : 0px;
+}
+
+.tabs__return{
+    list-style: none;
+    background-color: #AED2AB;
+    height: 5rem;
+    border-width: 1px;
+    margin : 0px;
+}
+
+.text-return{
+    color:#000;
+    margin-left: 20px;
+    padding-top: 10px
+}
+.tabs__button {
+    background: rgba(0, 0, 0, 0);
+    padding: 4px;
+    color: var(--headline);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: block;
+    position: relative;
+    font-family: inherit;
+    font-weight: 400;
+    height: 6rem;
+    width: 10rem;
+}
+
+.tabs__item:first-child {
+    margin-left: 6rem;
+}
+
+.tabs__button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: #C2FFBD;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.4s ease-in-out;
+    padding-top: 0.5rem;
+    border-width: 1px;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+}
+
+.tabs__button.active {
+    color: #C2FFBD
+}
+
+.tabs__button.active::after {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.4s ease-in-out;
+}
+
+
+.tabs__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.text-center{
+    color: #FFF;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.textMCP-center{
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    height: fit-content;
+}
+
+.check{
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #D9D9D9;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px
+}
+
+.fixed{
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-top:40px;
+    width: 200px;
+}
+.card{
+    border-radius: 5px;
+    background-color: #F8F7F7 ;
+    height: 320px;
+    width: 450px;
+    overflow-y: scroll;
+    white-space: nowrap;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.fixedlist{
+    font-weight: bold;
+    display: block;
+    width: 35rem;
+}
+
+.listtest{
+    width : 35.2rem;
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+
+.checkbox1{
+    margin-left: 9.2rem;
+}
+
+.formatsize{
+    height: 10%S
+}
+
+.list-group-item:first-child{
+    border-radius: 10px;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.liststyle {
+    width: 300px;
+    font-size: 1.5rem;
+}
+
+.list-group-item {
+    border-radius: 10px;
+    margin-bottom: -5px;
+}
+.dropdown-menu{
+    padding: 0px;
+}
+
+.button{
+    margin-top: 40px;
+    margin-left: 450px;
+    width : 110px;
+    height : 38px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+
+.btndel{
+    width : 70px;
+    height : 30px;
+    margin-left: 170px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.gg-arrow-left{
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    padding-left: 27px;
+}
+
+.capacity{
+    margin-top: -40px;
+}
