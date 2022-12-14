@@ -6,6 +6,8 @@ import VehicleAssign from "./pages/vehicle-assign/vehicle-assign";
 import RouteCreate from "./pages/route-management/route-create";
 import Login from "./pages/login";
 import StaffInfo from "./pages/staff-info";
+import { CollectorList } from './components/Collector List';
+import { JanitorList } from './components/Janitor List';
 
 function App() {
   return (
@@ -22,10 +24,12 @@ function App() {
             element={<RouteCreate />}
           />
           <Route exact path="/vehicle-assign" element={<VehicleAssign />} />
+          <Route path="/JanitorList" element={<JanitorList />} />
+          <Route path="/CollectorList" element={<CollectorList />} />
         </Routes>
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -1,0 +1,61 @@
+.header {
+    height: 1rem;
+}
+
+.boxTitle {
+    position: sticky;
+    background: #378F28;
+    color: white;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.container {
+    position: absolute;
+    width: 90vw;
+    height: 80vh;
+    left: 5vw;
+    top: 10vh;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    border: 2.5px solid black
+}
+.inforContainer {
+    overflow-y: scroll;
+}
+.table {
+    position: relative;
+    padding-right: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+.thead {
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    z-index: 10;
+    background-color: rgb(183, 181, 181);
+}
+.tbody {
+    font-size: 15px;
+}
+.tr:hover {
+    background-color: aqua;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }
