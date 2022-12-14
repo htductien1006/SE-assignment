@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SpecRoute from "./pages/route-management/spec-route";
+import RouteList from "./pages/route-management/route-list";
+import VehicleAssign from "./pages/vehicle-assign/vehicle-assign";
+import RouteCreate from "./pages/route-management/route-create";
+import Login from "./pages/login";
+import StaffInfo from "./pages/staff-info";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/staff-info" element={<StaffInfo />} />
+          <Route exact path="/route-management/list" element={<RouteList />} />
+          <Route exact path="/route-management/spec" element={<SpecRoute />} />
+          <Route
+            exact
+            path="/route-management/create"
+            element={<RouteCreate />}
+          />
+          <Route exact path="/vehicle-assign" element={<VehicleAssign />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
