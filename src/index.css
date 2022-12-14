@@ -1,11 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
 body {
   margin: 0;
   font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-montserrat: Montserrat;
+  /* font sizes */
+  --font-size-base: 14px;
+  --font-size-lg: 15px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 25px;
+
+  /* Colors */
+  --gray-5: #e0e0e0;
+  --color-gray-200: #d9d9d9;
+  --color-gray-300: #a1a1a1;
+  --gray-3: #828282;
+  --color-gray-500: #333;
+  --color-white: #fff;
+  --blue-2: #2d9cdb;
+  --color-green-100: #73c97b;
+  --color-green-200: #27ae60;
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-0: 0px;
+  --gap-md: 20px;
+
+  /* Paddings */
+  --padding-sm: 10px;
+  --padding-md: 55px;
+  --padding-lg: 74px;
+
+  /* border radiuses */
+  --br-md: 50px;
 }
