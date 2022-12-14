@@ -15,7 +15,7 @@ import Tabs from './components/BackOfficerDashboard/BackOfficerDashboard'
 import AssignEmp from './pages/AssignMCPforEmployee/AssignMCPforJanitor'
 import InfoMCP from './pages/infoMCP/InfoMCP'
 
-import JanitorCalendar from "./pages/JanitorCalendar";
+import JanitorCalendar from "./pages/JanitorCalendar/JanitorCalendar";
 
 
 function App() {
