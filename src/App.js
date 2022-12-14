@@ -6,6 +6,8 @@ import VehicleAssign from "./pages/vehicle-assign/vehicle-assign";
 import RouteCreate from "./pages/route-management/route-create";
 import Login from "./pages/login";
 import StaffInfo from "./pages/staff-info";
+// import logo from './logo.svg';
+import RouteList, {SpecRoute, RouteCreate} from './pages/route-management/route-management';
 
 function App() {
   return (
@@ -16,12 +18,11 @@ function App() {
           <Route path="/staff-info" element={<StaffInfo />} />
           <Route exact path="/route-management/list" element={<RouteList />} />
           <Route exact path="/route-management/spec" element={<SpecRoute />} />
-          <Route
-            exact
-            path="/route-management/create"
-            element={<RouteCreate />}
-          />
           <Route exact path="/vehicle-assign" element={<VehicleAssign />} />
+          <Route exact path="/route-management/"  element={<RouteList/>} />
+          <Route exact path="/route-management/spec/:id"  element={<SpecRoute/>} />
+          <Route exact path="/route-management/create"  element={<RouteCreate/>} />
+          <Route exact path="/vehicle-assign/:staffType"  element={<VehicleAssign/>} />
         </Routes>
       </BrowserRouter>
     </div>
