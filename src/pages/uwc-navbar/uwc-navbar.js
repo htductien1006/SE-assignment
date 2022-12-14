@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../css/uwc-navbar.css";
-import vector1 from "../assets/page-management/vector1.svg";
-import vector from "../assets/page-management/vector.svg";
-import ellipse4 from "../assets/page-management/ellipse4.png";
+import "./uwc-navbar.css";
+import vector1 from "../../assets/page-management/vector1.svg";
+import vector from "../../assets/page-management/vector.svg";
+import ellipse4 from "../../assets/page-management/ellipse4.png";
 
 const UwcNavbar = () => {
     return (
@@ -15,7 +15,7 @@ const UwcNavbar = () => {
             <div className="uwc-nav-button">JANITOR</div>
             <div className="uwc-nav-button">COLLECTOR</div>
             <div className="uwc-nav-button">
-                <Link className="text-link" to={"../route-management/list"}>ROUTE</Link>
+                <Link className="text-link" to={"../route-management"}>ROUTE</Link>
             </div>
           </div>
           <div className="personal-info">

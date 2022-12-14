@@ -110,6 +110,18 @@ td:hover {
     margin: 5px;
 }
 
+input {    
+    visibility:hidden;
+}
+
+input:checked ~ label{
+    background-color: rgb(200, 200, 200) !important;
+}
+
+.table-data-clicked {
+    background-color: rgb(200, 200, 200) !important;
+}
+
 .btn-submit {    
     align-self: flex-end;
     height: 2em;
@@ -125,7 +137,7 @@ td:hover {
 
 .btn-cancel {
     border-radius: 10px;
-    padding: 7px;
+    padding: 10px !important;
     background-color: #cb3c3c;
 }
 
@@ -135,7 +147,7 @@ td:hover {
 
 .btn-save {
     border-radius: 10px;
-    padding: 7px;
+    padding: 10px !important;
     background-color: #3ccb86;
 }
 
