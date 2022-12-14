@@ -15,7 +15,46 @@ import Tabs from './components/BackOfficerDashboard/BackOfficerDashboard'
 import AssignEmp from './pages/AssignMCPforEmployee/AssignMCPforJanitor'
 import InfoMCP from './pages/infoMCP/InfoMCP'
 
+import JanitorCalendar from "./pages/JanitorCalendar";
+
+
 function App() {
+  // const action = useNavigationType();
+  // const location = useLocation();
+  // const pathname = location.pathname;
+
+  // useEffect(() => {
+  //   if (action !== "POP") {
+  //     window.scrollTo(0, 0);
+  //   }
+  // }, [action]);
+
+  // useEffect(() => {
+  //   let title = "";
+  //   let metaDescription = "";
+
+  //   //TODO: Update meta titles and descriptions below
+  //   switch (pathname) {
+  //     case "/":
+  //       title = "";
+  //       metaDescription = "";
+  //       break;
+  //   }
+
+  //   if (title) {
+  //     document.title = title;
+  //   }
+
+  //   if (metaDescription) {
+  //     const metaDescriptionTag = document.querySelector(
+  //       'head > meta[name="description"]'
+  //     );
+  //     if (metaDescriptionTag) {
+  //       metaDescriptionTag.content = metaDescription;
+  //     }
+  //   }
+  // }, [pathname]);
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -39,6 +78,7 @@ function App() {
           <Route path="/dashBoard" element={<Tabs />} />  
           <Route path="/AssignEmployee" element={<AssignEmp />} /> 
           <Route path="/infoMCP" element={<InfoMCP />} /> 
+          <Route path="/JanitorCalendar" element={<JanitorCalendar />} />
         </Routes>
       </BrowserRouter>
     </div>
