@@ -1,6 +1,7 @@
 import "./AssignMCPforJanitor.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import UwcNavbar from "../uwc-navbar/uwc-navbar"
 const assigned_MCP = [
   {
     id: 1,
@@ -215,73 +216,76 @@ const ListOther = (props) => {
 
 const AssignEmp = () => {
   return (
-    <div className={`tabs`}>
-      <ul className={`tabs__nav`}>
-        <h1 className="text-center">PHÂN VIỆC JANITOR</h1>
-      </ul>
-      <ul className={`tabs__return`}>
-        <h1 className="text-return">
-          <button className="btn">
-            <i className="gg-arrow-left"></i>
-          </button>
-          JANITOR{" "}
-        </h1>
-      </ul>
-      <div className={`tabs__content`}>
-        <div className={`tabs__content__1`}>
-          <div className={`tabs__content__1__Co1`}>
-            <span className="textMCP-center">Các MCP hiện tại</span>
-            <div className="card">
-              <div className="card-body">
-                {assigned_MCP.map((a) => (
-                  <ListAssigned
-                    key={[a.id, a.address]}
-                    id={a.id}
-                    address={a.address}
-                    maxslot={a.maxslot}
-                    employee={a.employee}
-                  />
-                ))}
-                <br />
-              </div>
-            </div>
-            <button
-              type="button"
-              className="btn btn-danger btndel"
-              onClick={deleteMCP}
-              style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
-            >
-              Xóa
+    <div>
+      <UwcNavbar/>
+      <div className={`tabs`}>
+        <ul className={`tabs__nav`}>
+          <h1 className="text-center">PHÂN VIỆC JANITOR</h1>
+        </ul>
+        <ul className={`tabs__return`}>
+          <h1 className="text-return">
+            <button className="btn">
+              <i className="gg-arrow-left"></i>
             </button>
-          </div>
-          <div className={`tabs__content__1__Co2`}>
-            <span className="textMCP-center">Các MCP khác</span>
-            <div className="card">
-              <div className="card-body">
-                {other_MCP.map((a) => (
-                  <ListOther
-                    key={[a.id, a.address]}
-                    id={a.id}
-                    address={a.address}
-                    maxslot={a.maxslot}
-                    employee={a.employee}
-                  />
-                ))}
-                <br />
+            JANITOR{" "}
+          </h1>
+        </ul>
+        <div className={`tabs__content`}>
+          <div className={`tabs__content__1`}>
+            <div className={`tabs__content__1__Co1`}>
+              <span className="textMCP-center">Các MCP hiện tại</span>
+              <div className="card">
+                <div className="card-body">
+                  {assigned_MCP.map((a) => (
+                    <ListAssigned
+                      key={[a.id, a.address]}
+                      id={a.id}
+                      address={a.address}
+                      maxslot={a.maxslot}
+                      employee={a.employee}
+                    />
+                  ))}
+                  <br />
+                </div>
               </div>
+              <button
+                type="button"
+                className="btn btn-danger btndel"
+                onClick={deleteMCP}
+                style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
+              >
+                Xóa
+              </button>
             </div>
-            <div className=" btndel"></div>
+            <div className={`tabs__content__1__Co2`}>
+              <span className="textMCP-center">Các MCP khác</span>
+              <div className="card">
+                <div className="card-body">
+                  {other_MCP.map((a) => (
+                    <ListOther
+                      key={[a.id, a.address]}
+                      id={a.id}
+                      address={a.address}
+                      maxslot={a.maxslot}
+                      employee={a.employee}
+                    />
+                  ))}
+                  <br />
+                </div>
+              </div>
+              <div className=" btndel"></div>
+            </div>
           </div>
         </div>
+        <button
+          type="button"
+          className="btn btn-success button"
+          onClick={confirmMCP}
+          style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
+        >
+          Xác nhận
+        </button>
       </div>
-      <button
-        type="button"
-        className="btn btn-success button"
-        onClick={confirmMCP}
-        style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
-      >
-        Xác nhận
-      </button>
     </div>
   );
 };

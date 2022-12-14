@@ -37,8 +37,8 @@ function App() {
           <Route exact path="/route-management/create"  element={<RouteCreate/>} />
           <Route exact path="/vehicle-assign/:staffType"  element={<VehicleAssign/>} />
           <Route path="/dashBoard" element={<Tabs />} />  
-          <Route path="/" element={<AssignEmp />} /> 
-          <Route path="/info" element={<InfoMCP />} /> 
+          <Route path="/AssignEmployee" element={<AssignEmp />} /> 
+          <Route path="/infoMCP" element={<InfoMCP />} /> 
         </Routes>
       </BrowserRouter>
     </div>
