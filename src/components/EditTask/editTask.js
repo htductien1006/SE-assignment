@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import './style.css';
-import { DATA, INFO } from '../data/fakedata';
+import { DATA, INFO } from '../../Data/data/fakedata';
+import UwcNavbar from '../../pages/uwc-navbar/uwc-navbar';
 
-export const TaskInformation = () => {
+export const EditTask = () => {
     const tempoLocal = localStorage.getItem('tempo');
     const [tempo, setTempo] = useState(tempoLocal ? tempoLocal : DATA[0]);
     const [n, setN] = useState(0);
@@ -39,18 +40,21 @@ export const TaskInformation = () => {
     }
 
     return (
-        <div className="container">
-            <h1 className="text-center">TASK MANAGEMENT</h1>
-            <div className="main-content p-4 row">
-                <div className="row mb-3">
-                    <img src={INFO.avatar} alt='avatar' className="col-1 rounded-circle p-1"/>
-                    <div className="col-1 my-auto">
-                        <h1>{INFO.name}</h1>
-                        <h5>{INFO.role}</h5>
+        <div>
+            <UwcNavbar/>
+            <h1 className="text-center" style={{color: 'black', fontWeight: 'bold'}}>TASK MANAGEMENT</h1>
+            <div className="main-content p-4">
+            <div className="row">
+                        <img src={INFO.avatar} alt='avatar' className="col-auto rounded-circle my-auto"/>
+                        <div className="col-2 my-auto">
+                            <h1>{INFO.name}</h1>
+                            <div class="id-role-info">
+                                <h5>{INFO.role}</h5>
+                                <h5>ID{INFO.id}</h5>
+                            </div>                        
+                        </div>
                     </div>
-                    <h5 className="col-1 mt-5 pt-3">ID{INFO.id}</h5>
-                </div>
-                <h4 className="text-center" style={{ fontWeight: 'bold' }}>EDIT TASK</h4>
+                <h4 className="text-center" style={{ fontWeight: 'bold', margin: '2rem 0 1rem', color: 'black' }}>EDIT TASK</h4>
                 <div className="bg-light p-4 rounded-3 border border-dark">
                     {tempo && tempo.task.map(todo => 
                         <div className='p-2'>

@@ -14,46 +14,14 @@ import RouteList, {SpecRoute, RouteCreate} from './pages/route-management/route-
 import Tabs from './components/BackOfficerDashboard/BackOfficerDashboard'
 import AssignEmp from './pages/AssignMCPforEmployee/AssignMCPforJanitor'
 import InfoMCP from './pages/infoMCP/InfoMCP'
+import { TaskInformation } from "./components/TaskInformation/taskInformation";
+import { EditTask } from "./components/EditTask/editTask";
+
 
 import JanitorCalendar from "./pages/JanitorCalendar/JanitorCalendar";
 
 
 function App() {
-  // const action = useNavigationType();
-  // const location = useLocation();
-  // const pathname = location.pathname;
-
-  // useEffect(() => {
-  //   if (action !== "POP") {
-  //     window.scrollTo(0, 0);
-  //   }
-  // }, [action]);
-
-  // useEffect(() => {
-  //   let title = "";
-  //   let metaDescription = "";
-
-  //   //TODO: Update meta titles and descriptions below
-  //   switch (pathname) {
-  //     case "/":
-  //       title = "";
-  //       metaDescription = "";
-  //       break;
-  //   }
-
-  //   if (title) {
-  //     document.title = title;
-  //   }
-
-  //   if (metaDescription) {
-  //     const metaDescriptionTag = document.querySelector(
-  //       'head > meta[name="description"]'
-  //     );
-  //     if (metaDescriptionTag) {
-  //       metaDescriptionTag.content = metaDescription;
-  //     }
-  //   }
-  // }, [pathname]);
 
   return (
     <div className="App">
@@ -79,7 +47,8 @@ function App() {
           <Route path="/AssignEmployee" element={<AssignEmp />} /> 
           <Route path="/infoMCP" element={<InfoMCP />} /> 
           <Route path="/JanitorCalendar" element={<JanitorCalendar />} />
-          
+          <Route path='/taskInformation' element={<TaskInformation/>}/>
+          <Route path='/editTask' element={<EditTask/>}/>
         </Routes>
       </BrowserRouter>
     </div>
