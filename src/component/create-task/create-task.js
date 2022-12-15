@@ -10,23 +10,24 @@ export const CreateTask = () => {
 
     const handleDelete = () => {
         const newData = data.filter(todo => todo.id !== tg);
-        setData(newData);
+        setData(newData);  
         setTG();
         setOpen(false);
     }
 
     return (
         <div className="container">
-            <h1 className="text-center">TASK INFORMATION</h1>
+            <h1 className="text-center">TASK MANAGEMENT</h1>
             <div className="main-content p-4 row">
                 <div className="row mb-3">
                     <img src={INFO.avatar} alt='avatar' className="col-1 rounded-circle p-1"/>
-                    <div className="col-2 my-auto">
+                    <div className="col-1 my-auto">
                         <h1>{INFO.name}</h1>
                         <h5>{INFO.role}</h5>
                     </div>
-                    <h5 className="col-2 mt-5 pt-3">ID{INFO.id}</h5>
+                    <h5 className="col-1 mt-5 pt-3">ID{INFO.id}</h5>
                 </div>
+                <h4 className="text-center" style={{ fontWeight: 'bold' }}>TASKS INFORMATION</h4>
                 <div className="col-7">
                     {data && data.map((todo, index) => (
                         <div className="bg-light p-4 mb-4 rounded-3 border border-dark row" key={index}>
@@ -56,13 +57,13 @@ export const CreateTask = () => {
                         </div>
                     ))}
                 </div>      
-                <div className='col-5 text-end py-5'>
+                <div className='col-4 text-end py-5'>
                     <h4>Vehicle: Troller 1</h4>
                     <button className="btn btn-success mb-5">Assign vehicle</button>
                     <h4>MCP: M1, M2, M3</h4>
                     <button className="btn btn-danger">Assign MCP</button>
                 </div>
-                <div className="col-6 mx-auto">
+                <div className="col-3 mx-auto">
                     <button className="btn btn-danger">New Task</button>
                 </div>
             </div>
