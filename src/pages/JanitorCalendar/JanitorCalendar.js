@@ -1,13 +1,13 @@
 import { useState, useCallback } from "react";
-import R4c2Copy from "../../components/R4c2Copy";
-import PortalPopup from "../../components/PortalPopup";
-import R4c3Copy from "../../components/R4c3Copy";
-import R4c4Copy from "../../components/R4c4Copy";
-import R4c5Copy from "../../components/R4c5Copy";
-import R4c6Copy from "../../components/R4c6Copy";
-import R4c7Copy from "../../components/R4c7Copy";
-import R5c1Copy from "../../components/R5c1Copy";
-import R5c2Copy from "../../components/R5c2Copy";
+import R4c2Copy from "../../components/Janitor_calendar_components/R4c2Copy";
+import PortalPopup from "../../components/Janitor_calendar_components/PortalPopup";
+import R4c3Copy from "../../components/Janitor_calendar_components/R4c3Copy";
+import R4c4Copy from "../../components/Janitor_calendar_components/R4c4Copy";
+import R4c5Copy from "../../components/Janitor_calendar_components/R4c5Copy";
+import R4c6Copy from "../../components/Janitor_calendar_components/R4c6Copy";
+import R4c7Copy from "../../components/Janitor_calendar_components/R4c7Copy";
+import R5c1Copy from "../../components/Janitor_calendar_components/R5c1Copy";
+import R5c2Copy from "../../components/Janitor_calendar_components/R5c2Copy";
 import UwcNavbar from "../uwc-navbar/uwc-navbar"
 import "./JanitorCalendar.css";
 
