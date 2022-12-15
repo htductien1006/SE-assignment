@@ -110,11 +110,11 @@ td:hover {
     margin: 5px;
 }
 
-/* input {    
+.vehicle-table-data input {    
     visibility:hidden;
-} */
+} 
 
-input:checked ~ label{
+.vehicle-table-data input:checked ~ label{
     background-color: rgb(200, 200, 200) !important;
 }
 
@@ -153,4 +153,8 @@ input:checked ~ label{
 
 .btn-save:hover {
     background-color: #33af73;
+}
+
+.btn-submit a:visited {
+    color: inherit !important;
 }

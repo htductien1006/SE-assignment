@@ -3,15 +3,17 @@ import UwcNavbar from "../uwc-navbar/uwc-navbar"
 import staffPhoto from "../../assets/staff-info/staffPhoto.png";
 import "./index.css";
 import arrow from "../../assets/staff-info/arrow-left.png";
+import { useNavigate } from "react-router-dom";
 
 const StaffInfo = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <UwcNavbar />
       <div className="staff-info-wrapper">
         <div className="staff-page-title">THÔNG TIN NHÂN VIÊN</div>
         <div className="staff-page-body">
-          <div className="gobackBtn">
+          <div className="gobackBtn" onClick={() => navigate("/janitor-list")}>
             <IconButton aria-label="fingerprint" color="success">
               <img src={arrow} style={{ width: "30px", height: "30px" }} />
             </IconButton>
@@ -54,10 +56,10 @@ const StaffInfo = () => {
                   <strong>Mã phương tiện: </strong> <span>123456</span>
                 </p>
                 <div className="staff-button">
-                  <Button variant="contained" color="success">
+                  <Button variant="contained" color="success" onClick={() => navigate("/vehicle-assign/janitor")} >
                     Phân phương tiện
                   </Button>
-                  <Button variant="contained">Phân công việc</Button>
+                  <Button variant="contained" onClick={() => navigate("/task-info")}>Phân công việc</Button>
                 </div>
               </div>
             </div>

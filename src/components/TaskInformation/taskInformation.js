@@ -1,11 +1,11 @@
 import { Modal } from 'antd';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { DATA, INFO } from '../../Data/data/fakedata';
 import UwcNavbar from "../../pages/uwc-navbar/uwc-navbar";
 import './style.css';
 
 export const TaskInformation = () => {
-
     const [data, setData] = useState(DATA);
     const [open, setOpen] = useState(false);
     const [tg, setTG] = useState();
@@ -26,8 +26,8 @@ export const TaskInformation = () => {
                     <div className="row">
                         <img src={INFO.avatar} alt='avatar' className="col-auto rounded-circle my-auto"/>
                         <div className="col-2 my-auto">
-                            <h1>{INFO.name}</h1>
-                            <div class="id-role-info">
+                            <h1><Link className="text-link" to={"../staff-info"}>{INFO.name}</Link></h1>
+                            <div className="id-role-info">
                                 <h5>{INFO.role}</h5>
                                 <h5>ID{INFO.id}</h5>
                             </div>                        
@@ -65,12 +65,18 @@ export const TaskInformation = () => {
                     </div>      
                     <div className='col-4 text-end py-5'>
                         <h4>Vehicle: Troller 1</h4>
-                        <button className="btn btn-success mb-5">Assign vehicle</button>
+                        <button className="btn btn-success mb-5">
+                            <Link className="text-link" to={"../vehicle-assign/janitor"}>Assign vehicle</Link>
+                        </button>
                         <h4>MCP: M1, M2, M3</h4>
-                        <button className="btn btn-danger">Assign MCP</button>
+                        <button className="btn btn-danger">
+                            <Link className="text-link" to={"../assign-employee"}>Assign MCP</Link>
+                        </button>
                     </div>
                     <div className="col-3 mx-auto">
-                        <button className="btn btn-danger">New Task</button>
+                        <button className="btn btn-danger">
+                            <Link className="text-link" to={"../edit-task"}>Add or Edit Task</Link>
+                        </button>
                     </div>
                 </div>
             </div>

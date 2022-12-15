@@ -12,3 +12,11 @@
 .rounded-circle {
     height: 100px !important;
 }
+
+.btn-success a:visited {
+    color: inherit !important;
+}
+
+.btn-danger a:visited {
+    color: inherit !important;
+}

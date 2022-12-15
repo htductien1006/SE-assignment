@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './style.css';
 import { DATA, INFO } from '../../Data/data/fakedata';
 import UwcNavbar from '../../pages/uwc-navbar/uwc-navbar';
+import { Link } from 'react-router-dom';
 
 export const EditTask = () => {
     const tempoLocal = localStorage.getItem('tempo');
@@ -95,16 +96,16 @@ export const EditTask = () => {
                     </div>
                     <div className="d-flex justify-content-center py-3">
                         <button 
-                            className="btn btn-info mx-5 border border-dark" 
-                            onClick={() => console.log(tempo)}
-                        >
-                            Confirm
-                        </button>
-                        <button 
                             className="btn btn-danger mx-5 border border-dark" 
                             onClick={() => console.log(tempo)}
                         >
-                            Cancel
+                           <Link className="text-link" to={"../task-info"}>Cancel</Link>
+                        </button>
+                        <button 
+                            className="btn btn-info mx-5 border border-dark" 
+                            onClick={() => console.log(tempo)}
+                        >
+                            <Link className="text-link" to={"../task-info"}>Confirm</Link>
                         </button>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import "../AssignMCPforEmployee/AssignMCPforJanitor";
 import React from "react";
-import {Link} from "react-router-dom";
 import UwcNavbar from "../uwc-navbar/uwc-navbar"
+import { useNavigate } from "react-router-dom";
 
 const assigned_MCP =
   {
@@ -17,6 +17,7 @@ const assigned_MCP =
   }
 
 const InfoMCP = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <UwcNavbar/>
@@ -25,7 +26,7 @@ const InfoMCP = () => {
           <h1 className="text-center">PHÂN VIỆC JANITOR</h1>
         </ul>
         <ul className={`tabs_return`}>
-          <h1 className="text-return"><Link to='/AssignEmployee' ><button className="btn"><i className="gg-arrow-left"></i></button></Link>Thông tin MCP {assigned_MCP.id}</h1>
+          <h1 className="text-return"><button className="btn" onClick={() => navigate('/assign-employee')}><i className="gg-arrow-left"></i></button>Thông tin MCP {assigned_MCP.id}</h1>
         </ul>
         <div className={`tabs_content`} >
           <div className={`tabs_content_1`}>

@@ -1,6 +1,6 @@
 export const INFO = {
-    id: '#0123',
-    name: 'Nick',
+    id: '#123456',
+    name: 'Nguyễn Văn A',
     role: 'Janitor', 
     avatar: 'https://kiemtientuweb.com/ckfinder/userfiles/images/avatar-fb/avatar-fb-1.jpg',
 }

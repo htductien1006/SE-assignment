@@ -9,11 +9,17 @@ const UwcNavbar = () => {
     return (
         <div className="uwc-navbar">
           <div className="logo">
+            <Link className="text-link" to={"../dashboard"}>
               <span className="logo-1">LOGO</span>
+            </Link>
           </div>
           <div className="uwc-navigator">          
-            <div className="uwc-nav-button">JANITOR</div>
-            <div className="uwc-nav-button">COLLECTOR</div>
+            <div className="uwc-nav-button">
+              <Link className="text-link" to={"../janitor-list"}>JANITOR</Link>
+            </div>
+            <div className="uwc-nav-button">              
+              <Link className="text-link" to={"../collector-list"}>COLLECTOR</Link>
+            </div>
             <div className="uwc-nav-button">
                 <Link className="text-link" to={"../route-management"}>ROUTE</Link>
             </div>
@@ -21,7 +27,7 @@ const UwcNavbar = () => {
           <div className="personal-info">
             <img className="icon"  alt="msg-icon" src={vector} />
             <img className="icon"  alt="noti-icon" src={vector1} />
-            <img className="avatar" alt="avt-icon"  src={ellipse4} />
+            <Link className="text-link" to={"../"}><img className="avatar" alt="avt-icon"  src={ellipse4} /></Link>
           </div>
         </div>
     );

@@ -29,27 +29,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/staff-info" element={<StaffInfo />} />
-          <Route exact path="/route-management/list" element={<RouteList />} />
-          <Route exact path="/route-management/spec" element={<SpecRoute />} />
-          <Route
-            exact
-            path="/route-management/create"
-            element={<RouteCreate />}
-          />
-          <Route exact path="/vehicle-assign" element={<VehicleAssign />} />
-          <Route path="/JanitorList" element={<JanitorList />} />
-          <Route path="/CollectorList" element={<CollectorList />} />
+          <Route path="/janitor-list" element={<JanitorList />} />
+          <Route path="/collector-list" element={<CollectorList />} />
           <Route exact path="/route-management/"  element={<RouteList/>} />
           <Route exact path="/route-management/spec/:id"  element={<SpecRoute/>} />
           <Route exact path="/route-management/create"  element={<RouteCreate/>} />
           <Route exact path="/vehicle-assign/:staffType"  element={<VehicleAssign/>} />
-          <Route path="/dashBoard" element={<Tabs />} />  
-          <Route path="/AssignEmployee" element={<AssignEmp />} /> 
+          <Route path="/dashboard" element={<Tabs />} />  
+          <Route path="/assign-employee" element={<AssignEmp />} /> 
           <Route path="/infoMCP" element={<InfoMCP />} /> 
-          <Route path="/JanitorCalendar" element={<JanitorCalendar />} />
-          <Route path='/CollectorCalendar' element={<CollectorCalendar/>}/>
-          <Route path='/taskInformation' element={<TaskInformation/>}/>
-          <Route path='/editTask' element={<EditTask/>}/>
+          <Route path="/janitor-calendar" element={<JanitorCalendar />} />
+          <Route path='/collector-calendar' element={<CollectorCalendar/>}/>
+          <Route path='/task-info' element={<TaskInformation/>}/>
+          <Route path='/edit-task' element={<EditTask/>}/>
         </Routes>
       </BrowserRouter>
     </div>

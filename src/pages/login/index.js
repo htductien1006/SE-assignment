@@ -58,7 +58,7 @@ const Login = () => {
           </div>
           <div className="checkbox">
             <Checkbox defaultChecked />
-            <span>Nhớ tài khoản này</span>
+            <span className="pass-remember-text">Nhớ tài khoản này</span>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ const Login = () => {
             width: "30%",
             margin: "0 auto",
           }}
-          onClick={() => navigate("/home")}
+          onClick={() => navigate("/dashboard")}
         >
           Đăng nhập
         </Button>

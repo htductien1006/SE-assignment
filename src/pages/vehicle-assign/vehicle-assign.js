@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import UwcNavbar from "../uwc-navbar/uwc-navbar"
 import "./vehicle-assign.css";
 
@@ -67,10 +68,14 @@ const VehicleAssign = () => {
             </div>              
             <div className="btn-submit">
                 <div className="btn-body">
-                    <span className="btn-cancel">Cancel</span>
+                    <Link className="text-link" to={"../task-info"}>
+                        <span className="btn-cancel">Cancel</span>
+                    </Link>
                 </div>
                 <div className="btn-body">
-                    <span className="btn-save">Save</span>
+                    <Link className="text-link" to={"../task-info"}>
+                        <span className="btn-save">Save</span>
+                    </Link>
                 </div>
             </div>
         </div>

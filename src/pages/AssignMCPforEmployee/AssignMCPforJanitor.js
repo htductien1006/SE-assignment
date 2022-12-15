@@ -224,10 +224,12 @@ const AssignEmp = () => {
         </ul>
         <ul className={`tabs_return`}>
           <h1 className="text-return">
-            <button className="btn">
-              <i className="gg-arrow-left"></i>
-            </button>
-            JANITOR{" "}
+            <Link className="text-link" to={"../task-info"}>
+              <button className="btn">
+                <i className="gg-arrow-left"></i>
+              </button>
+              JANITOR{" "}
+            </Link>
           </h1>
         </ul>
         <div className={`tabs_content`}>

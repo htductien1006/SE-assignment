@@ -14,3 +14,7 @@
 .rounded-circle {
     height: 100px !important;
 }
+
+.btn-info a:visited {
+    color: inherit !important;
+}

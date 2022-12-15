@@ -82,3 +82,15 @@
   color: inherit;
   text-decoration: inherit;
 }
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.uwc-nav-button a:visited {
+  color: inherit !important;
+}
+
+.logo a:visited {
+  color: inherit !important;
+}

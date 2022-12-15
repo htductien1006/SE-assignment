@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 import { makeStyles } from "@mui/styles";
 import UwcNavbar from "../../pages/uwc-navbar/uwc-navbar";
 import "./index.css"
+import { Link } from 'react-router-dom';
 
 const collectorInformation = [
     {
@@ -64,11 +65,19 @@ export const CollectorList = () => {
                             <tbody className="tbody">
 
                                 <tr className="tr" onMouseOver={{ backgroundColor: "aqua" }}>
-                                    <th><img height="150px" width="120px" src={item.Avatar} alt="avatar"></img></th>
-                                    <th style={{ fontWeight: "500" }}>{item.ID}</th>
-                                    <th style={{ fontWeight: "500" }}>{item.Name}</th>
-                                    <th style={{ fontWeight: "500" }}>{item.Phone}</th>
-                                    <th style={{ fontWeight: "500" }}>{item.Email}</th>
+                                    <th ><img height="150px" width="120px" src={item.Avatar} alt="avatar"></img></th>
+                                    <th style={{ fontWeight: "500" }}>
+                                        <Link className="text-link" to={"../staff-info"}>{item.ID}</Link>
+                                    </th>
+                                    <th style={{ fontWeight: "500" }}>
+                                        <Link className="text-link" to={"../staff-info"}>{item.Name}</Link>
+                                    </th>
+                                    <th style={{ fontWeight: "500" }}>
+                                        <Link className="text-link" to={"../staff-info"}>{item.Phone}</Link>
+                                    </th>
+                                    <th style={{ fontWeight: "500" }}>
+                                        <Link className="text-link" to={"../staff-info"}>{item.Email}</Link>
+                                    </th>
                                 </tr>
 
                             </tbody>

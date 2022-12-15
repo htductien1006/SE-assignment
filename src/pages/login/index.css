@@ -43,3 +43,8 @@
   font-weight: 500;
   margin-bottom: 10px;
 }
+
+.pass-remember-text {
+  word-wrap:normal;
+  width: 100px !important;
+}
