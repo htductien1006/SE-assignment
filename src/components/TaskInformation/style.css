@@ -1,0 +1,14 @@
+.container{
+    border: none;
+}
+.main-content {
+    margin: 0 4rem;
+    min-height: calc(100vh - 110px);
+}
+.id-role-info {
+    display: flex;
+    justify-content: space-between;
+}
+.rounded-circle {
+    height: 100px !important;
+}
