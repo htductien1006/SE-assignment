@@ -16,7 +16,7 @@ import AssignEmp from './pages/AssignMCPforEmployee/AssignMCPforJanitor'
 import InfoMCP from './pages/infoMCP/InfoMCP'
 import { TaskInformation } from "./components/TaskInformation/taskInformation";
 import { EditTask } from "./components/EditTask/editTask";
-
+import CollectorCalendar from "./pages/CollectorCalendar/CollectorCalendar";
 
 import JanitorCalendar from "./pages/JanitorCalendar/JanitorCalendar";
 
@@ -47,6 +47,7 @@ function App() {
           <Route path="/AssignEmployee" element={<AssignEmp />} /> 
           <Route path="/infoMCP" element={<InfoMCP />} /> 
           <Route path="/JanitorCalendar" element={<JanitorCalendar />} />
+          <Route path='/CollectorCalendar' element={<CollectorCalendar/>}/>
           <Route path='/taskInformation' element={<TaskInformation/>}/>
           <Route path='/editTask' element={<EditTask/>}/>
         </Routes>

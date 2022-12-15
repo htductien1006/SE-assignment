@@ -110,9 +110,9 @@ td:hover {
     margin: 5px;
 }
 
-input {    
+/* input {    
     visibility:hidden;
-}
+} */
 
 input:checked ~ label{
     background-color: rgb(200, 200, 200) !important;

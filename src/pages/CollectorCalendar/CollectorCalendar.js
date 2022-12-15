@@ -1,20 +1,21 @@
 import { useState, useCallback } from "react";
-import R2c7Copy from "../components/R2c7Copy";
-import PortalPopup from "../components/PortalPopup";
-import R4c2Copy from "../components/R4c2Copy";
-import R4c3Copy from "../components/R4c3Copy";
-import R4c4Copy from "../components/R4c4Copy";
-import R4c5Copy from "../components/R4c5Copy";
-import R4c6Copy from "../components/R4c6Copy";
-import R4c7Copy from "../components/R4c7Copy";
-import R5c1Copy from "../components/R5c1Copy";
-import R5c2Copy from "../components/R5c2Copy";
-import R5c3Copy from "../components/R5c3Copy";
-import R5c4Copy from "../components/R5c4Copy";
-import R5c5Copy from "../components/R5c5Copy";
-import R5c6Copy from "../components/R5c6Copy";
-import R5c7Copy from "../components/R5c7Copy";
+import R2c7Copy from "../../components/R2c7Copy";
+import PortalPopup from "../../components/PortalPopup";
+import R4c2Copy from "../../components/R4c2Copy";
+import R4c3Copy from "../../components/R4c3Copy";
+import R4c4Copy from "../../components/R4c4Copy";
+import R4c5Copy from "../../components/R4c5Copy";
+import R4c6Copy from "../../components/R4c6Copy";
+import R4c7Copy from "../../components/R4c7Copy";
+import R5c1Copy from "../../components/R5c1Copy";
+import R5c2Copy from "../../components/R5c2Copy";
+import R5c3Copy from "../../components/R5c3Copy";
+import R5c4Copy from "../../components/R5c4Copy";
+import R5c5Copy from "../../components/R5c5Copy";
+import R5c6Copy from "../../components/R5c6Copy";
+import R5c7Copy from "../../components/R5c7Copy";
 import "./CollectorCalendar.css";
+import UwcNavbar from "../uwc-navbar/uwc-navbar";
 
 const CollectorCalendar = () => {
   const [isR2c7CopyPopupOpen, setR2c7CopyPopupOpen] = useState(false);
@@ -146,6 +147,7 @@ const CollectorCalendar = () => {
 
   return (
     <>
+    <UwcNavbar/>
       <div className="collector-calendar-div">
         <div className="background-frame-div">
           <div className="white-background-div">
@@ -386,7 +388,7 @@ const CollectorCalendar = () => {
             </div>
           </main>
         </div>
-        <div className="header-bar-frame-div">
+        {/* <div className="header-bar-frame-div">
           <button className="logoframe-button">
             <div className="logo-text-div">LOGO</div>
           </button>
@@ -399,7 +401,7 @@ const CollectorCalendar = () => {
             />
             <img className="avatar-icon" alt="" src="../avatar-icon@2x.png" />
           </button>
-        </div>
+        </div> */}
       </div>
       {isR2c7CopyPopupOpen && (
         <PortalPopup
