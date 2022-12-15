@@ -12,7 +12,7 @@
   top: 0;
   left: 0;
   width: 1148px;
-  height: 86px;
+  height: 88px;
 }
 .white-background-div {
   position: relative;
@@ -343,9 +343,9 @@
   flex-direction: column;
 }
 .calendar-frame-div {
-  position: absolute;
+  position: relative;
   top: 197px;
-  left: 102px;
+  left: 212px;
   align-items: flex-start;
   gap: var(--gap-md);
 }
